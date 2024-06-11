@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+
+    button {
+        width: max-content;
+        border: none;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+        transition: 0.3s all;
+    }
+    button.anim-1:hover {
+        background-color: hotpink;
+        transform: translate(4rem, 3rem) rotate(45deg) skew(15deg, 15deg) scale(2);
+    }
+    button.anim-2:hover {
+        animation: jump 2s infinite ease-in-out;
+    }
+}
+
+@keyframes jump {
+    0% {
+        height: 1.8rem;
+    }
+    10% {
+        height: unset;
+        transform: translateY(-0.2rem);
+    }
+    20% {
+        transform: translateY(-1rem);
+    }
+    40% {
+        transform: translateY(-1.5rem);
+    }
+    75% {
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        height: 1.8rem;
+        transform: translateY(0);
+    }
+
+}
