@@ -10,6 +10,9 @@ main {
         padding: 0.5rem 2rem;
         cursor: pointer;
         transition: 0.3s all;
+        /* &:hover {
+            background-color: green;
+        } */
     }
     button.anim-1:hover {
         background-color: hotpink;
@@ -33,6 +36,7 @@ main {
     }
     40% {
         transform: translateY(-1.5rem);
+        transform: rotate(45deg);
     }
     75% {
         transform: translateY(-0.5rem);
